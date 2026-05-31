@@ -1,140 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Roberto Portfolio</title>
-  </head>
-  <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberto Guimarães — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-      <div class="container navbar">
-        <header>
-          <div class="lgo">
-            <h1>Roberto</h1>
-          </div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
 
-          <nav>
-            <ul>
-              <li><a href="#about">Sobre mim</a></li>
-              <li><a href="#skills">Conhecimentos</a></li>
-              <li><a href="https://www.linkedin.com/in/roberto--jr/">Contato</a></li>
-            </ul>
-          </nav>
-        </header>
+  <nav>
+    <div class="nav-logo">RG.</div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#experience" data-i18n="nav.experience">Experiência</a>
+        <a href="#contact" data-i18n="nav.contact">Contato</a>
       </div>
-
-      <div class="container main-info-section">
-        <div class="text">
-          <h1>
-            <span>O</span>
-            <span class="m-left">l</span>
-            <span class="m-left">á</span>
-            <span class="m-left">,</span>
-            <br>
-            <span>S</span>
-            <span class="m-left">o</span>
-            <span class="m-left">u </span>
-            <span class="name">R</span>
-            <span class="m-left name">o</span>
-            <span class="m-left name">b</span>
-            <span class="m-left name">e</span>
-            <span class="m-left name">r</span>
-            <span class="m-left name">t</span>
-            <span class="m-left name">o</span>
-            <span class="m-left">,</span>
-            <br>
-            <span>D</span>
-            <span class="m-left">e</span>
-            <span class="m-left">s</span>
-            <span class="m-left">e</span>
-            <span class="m-left">n</span>
-            <span class="m-left">v</span>
-            <span class="m-left">o</span>
-            <span class="m-left">l</span>
-            <span class="m-left">v</span>
-            <span class="m-left">e</span>
-            <span class="m-left">d</span>
-            <span class="m-left">o</span>
-            <span class="m-left">r</span>
-            <span> F</span>
-            <span class="m-left">u</span>
-            <span class="m-left">l</span>
-            <span class="m-left">l</span>
-            <span class="m-left">-</span>
-            <span class="m-left">S</span>
-            <span class="m-left">t</span>
-            <span class="m-left">a</span>
-            <span class="m-left">c</span>
-            <span class="m-left">k</span>
-            <span class="m-left">.</span>
-
-          </h1>
-
-          <p>JavaScript / Node / React </p>
-          <a href="https://www.linkedin.com/in/roberto--jr/">Contate-me</a>
-
-        </div>
-
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('pt')" id="btn-pt">
+          <span class="flag">🇧🇷</span>
+          <span>PT</span>
+        </button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">
+          <span class="flag">🇺🇸</span>
+          <span>EN</span>
+        </button>
+        <button class="lang-btn" onclick="setLang('es')" id="btn-es">
+          <span class="flag">🇪🇸</span>
+          <span>ES</span>
+        </button>
+        <button class="lang-btn" onclick="setLang('cn')" id="btn-cn">
+          <span class="flag">🇨🇳</span>
+          <span>CN</span>
+        </button>
       </div>
+    </div>
+  </nav>
 
-
-      <div class="container about" id="about">
-
-        <h1>Sobre mim</h1>
-        <div class="about-me-info">
-          <p>Sou fascinado por inovação e curioso por natureza.</p>
-          <p> sempre em busca de conhecimento para expandir meus horizontes e conseguir solucionar diversos problemas, ajudando não só a mim, mas também as pessoas ao meu redor.</p>
-          <p>Gosto de entender como as coisas funcionam para saber quando usá-las. Estou sempre disposto a aprender e ajudar.</p>
-
-        </div>
-        <img src="./img/dotted-shape.png" alt="">
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-tag" data-i18n="hero.tag">Disponível para novos projetos</div>
+    <h1>
+      <span class="line-dim">Roberto</span><br>
+      <span class="line-accent">Guimarães</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">
+      Desenvolvedor Full Stack com mais de 5 anos de experiência em sistemas web, mobile e integrações complexas — conectando plataformas financeiras, ERPs e gateways de pagamento com código limpo e foco em impacto real.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label" data-i18n="hero.stat1">Anos de exp.</div>
       </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Entrar em contato →</a>
+      <a href="https://linkedin.com/in/roberto--jr" target="_blank" class="btn btn-ghost">LinkedIn</a>
+    </div>
+  </section>
 
-      <div class="container skill" id="skill">
-        <h1>Conhecimentos</h1>
+  <div class="section-divider"></div>
 
-        <div class="skills">
-          <a href="https://www.flaticon.com/br/autores/freepik">
-          <img src="./img/html5.svg" alt="" >
-          </a>
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="sec-label reveal" data-i18n="skills.label">// Stack Técnico</p>
+    <h2 class="sec-title reveal reveal-delay-1" data-i18n="skills.title">Tecnologias &<br>Ferramentas</h2>
 
-          <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">
-            <img src="./img/css-3.svg" alt="">
-          </a> 
-
-          <a href="https://smashicons.com/" title="Smashicons">
-            <img src="./img/js.svg" alt="" >
-          </a>
-
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-            <img src="./img/php.svg" alt="">
-          </a>
-
-          <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">
-            <img src="./img/reagir.svg" alt="" >
-          </a>
-
-          <a href="http://www.freepik.com/" title="Freepik">
-            <img src="./img/nodejs.svg" alt="" >
-          </a>
-
-          <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">
-            <img src="./img/sql.svg" alt="">
-          </a>
-
-          <img src="./img/mongoDB.png" alt="">
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-category">Back-end</div>
+        <div class="skill-tags">
+          <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">Lumen</span>
+          <span class="tag">Node.js</span><span class="tag">AdonisJS</span><span class="tag">REST API</span>
         </div>
       </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">🖥️</div>
+        <div class="skill-category">Front-end</div>
+        <div class="skill-tags">
+          <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+          <span class="tag">Vue.js</span><span class="tag">React.js</span><span class="tag">SPA</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-icon">📱</div>
+        <div class="skill-category">Mobile</div>
+        <div class="skill-tags">
+          <span class="tag">Flutter</span><span class="tag">Android</span>
+          <span class="tag">iOS</span><span class="tag" data-i18n="skills.multiplatform">Multiplataforma</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-category" data-i18n="skills.db">Banco de Dados</div>
+        <div class="skill-tags">
+          <span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+          <span class="tag" data-i18n="skills.modeling">Modelagem</span>
+          <span class="tag">Migrations</span><span class="tag" data-i18n="skills.optim">Otimização</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">🚀</div>
+        <div class="skill-category">DevOps & Infra</div>
+        <div class="skill-tags">
+          <span class="tag">Docker</span><span class="tag">Linux</span>
+          <span class="tag">Laravel Forge</span><span class="tag">CI/CD</span><span class="tag">Git</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-icon">🔗</div>
+        <div class="skill-category" data-i18n="skills.integrations">Integrações</div>
+        <div class="skill-tags">
+          <span class="tag">SAP Service Layer</span><span class="tag">Asaas</span>
+          <span class="tag">IUGU</span><span class="tag">Sicoob</span>
+          <span class="tag">Webhooks</span><span class="tag">E-Sign</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <div class="section-divider"></div>
 
-    <script src="js/ScrollMagic.min.js"></script>
-    <script src="js/animation.gsap.min.js"></script>
-    <script src="js/TimelineLite.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/CSSPlugin.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="sec-label reveal" data-i18n="exp.label">// Trajetória</p>
+    <h2 class="sec-title reveal reveal-delay-1" data-i18n="exp.title">Experiência<br>Profissional</h2>
+
+    <div class="exp-list">
+
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <span class="exp-period" data-i18n="exp.aia.period">Fev 2025 — Presente</span>
+          <span class="exp-company">AIA Tecnologia</span>
+          <span class="exp-location">Brasília, DF</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role" data-i18n="exp.role">Desenvolvedor Full Stack</div>
+          <p class="exp-desc" data-i18n="exp.aia.desc">Desenvolvimento e arquitetura de sistemas web e mobile para múltiplos clientes, com foco em automação financeira e escalabilidade.</p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.aia.b1">Integração SAP ERP via API REST/Service Layer — emissão de NF, conciliação contábil e controle financeiro automatizados</li>
+            <li data-i18n="exp.aia.b2">Automação de cobranças recorrentes com Asaas, IUGU e Sicoob em PHP/Laravel, com tratamento de webhooks e inadimplência</li>
+            <li data-i18n="exp.aia.b3">Interfaces SPA em Vue.js e React.js; apps mobile multiplataforma em Flutter</li>
+            <li data-i18n="exp.aia.b4">Infra em Docker e Laravel Forge em servidores Linux; code review e Gitflow em times ágeis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <span class="exp-period" data-i18n="exp.anadem.period">Mai 2023 — Fev 2025</span>
+          <span class="exp-company">ANADEM</span>
+          <span class="exp-location">Brasília, DF</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role" data-i18n="exp.role">Desenvolvedor Full Stack</div>
+          <p class="exp-desc" data-i18n="exp.anadem.desc">Responsável pelos sistemas principais da instituição: portal Anadem Online, app mobile e sistema financeiro SisAnadem.</p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.anadem.b1">Construção do ecossistema de APIs RESTful em PHP/Laravel com foco em segurança e performance</li>
+            <li data-i18n="exp.anadem.b2">App mobile (Android/iOS) em Flutter e plataforma web em Vue.js</li>
+            <li data-i18n="exp.anadem.b3">Modelagem e otimização de queries para relatórios financeiros em MySQL</li>
+            <li data-i18n="exp.anadem.b4">Levantamento de requisitos com stakeholders internos, traduzindo demandas em soluções técnicas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <span class="exp-period" data-i18n="exp.zehta.period">Mai 2022 — Mai 2023</span>
+          <span class="exp-company">ZEHTA Tecnologia</span>
+          <span class="exp-location">Brasília, DF</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role" data-i18n="exp.role">Desenvolvedor Full Stack</div>
+          <p class="exp-desc" data-i18n="exp.zehta.desc">Desenvolvimento de sistemas web e mobile sob demanda para clientes de diferentes segmentos.</p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.zehta.b1">App para corretores com propostas digitais e assinatura eletrônica integrada — eliminou contratos físicos e reduziu tempo de fechamento</li>
+            <li data-i18n="exp.zehta.b2">Back-end em PHP/Laravel, interfaces em Vue.js e apps em Flutter</li>
+            <li data-i18n="exp.zehta.b3">Integração com APIs de autenticação e geolocalização</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <span class="exp-period" data-i18n="exp.synapse.period">Jan 2021 — Jun 2022</span>
+          <span class="exp-company">Synapse Brasil</span>
+          <span class="exp-location">Brasília, DF</span>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role" data-i18n="exp.role">Desenvolvedor Full Stack</div>
+          <p class="exp-desc" data-i18n="exp.synapse.desc">Atuação em múltiplos projetos em software house, com stacks e contextos variados.</p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.synapse.b1">Back-end em PHP (Laravel/Lumen) e Node.js com AdonisJS</li>
+            <li data-i18n="exp.synapse.b2">Front-end em Vue.js, React.js e Angular; mobile em Flutter</li>
+            <li data-i18n="exp.synapse.b3">Experiência em diferentes arquiteturas e metodologias ágeis em projetos simultâneos</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="sec-label reveal" data-i18n="contact.label">// Vamos conversar</p>
+    <h2 class="sec-title reveal reveal-delay-1" data-i18n="contact.title">Entre em<br>Contato</h2>
+
+    <div class="contact-card reveal reveal-delay-2">
+      <p class="contact-text" data-i18n="contact.text">
+        Aberto a oportunidades de trabalho. Se você tem um problema interessante para resolver, me chama.
+      </p>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/roberto--jr" target="_blank" class="btn btn-primary" data-i18n="contact.linkedin">LinkedIn →</a>
+        <a href="mailto:roberto@email.com" class="btn btn-ghost" data-i18n="contact.email">E-mail</a>
+        <a href="https://github.com" target="_blank" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Roberto Guimarães</span> — Brasília, DF · Full Stack Developer
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
